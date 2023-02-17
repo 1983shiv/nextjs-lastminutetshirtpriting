@@ -22,11 +22,11 @@ export default function Home() {
           same day with next day express delivery available.
         </h4>
 
-        {colData && colData.map((item) => {
+        {colData && colData.map((item, index) => {
           if (item.left) {
-            return (<Col2 title={item.title} imgsrc={item.imgsrc} desc={item.desc} />)
+            return (<Col2 key={index} title={item.title} imgsrc={item.imgsrc} desc={item.desc} />)
           } else {
-            return (<Col2Right title={item.title} imgsrc={item.imgsrc} desc={item.desc} />)
+            return (<Col2Right key={index} title={item.title} imgsrc={item.imgsrc} desc={item.desc} />)
           }
 
         })}
@@ -42,13 +42,10 @@ export default function Home() {
           same day with next day express delivery available.
         </h4>
 
-        {timelineData && timelineData.map((item) => {
-          return (<Timeline title={item.title} imgsrc={item.imgsrc} left={item.left} desc={item.desc} />)
+        {timelineData && timelineData.map((item, index) => {
+          return (<Timeline key={index} title={item.title} imgsrc={item.imgsrc} left={item.left} desc={item.desc} />)
         })}
 
-        {/* {timelineData && timelineData.map((item) => {
-          <Timeline title={item.title} imgsrc={item.imgsrc} left={item.left} desc={item.desc} />
-        })} */}
       </div>
     </>
   )
