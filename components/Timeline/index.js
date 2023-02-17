@@ -1,12 +1,12 @@
 import Image from 'next/image'
-import { styles } from "./index.module.css"
+import styles from "./index.module.css"
 import Link from 'next/link'
 
 const Timeline = ({ title, left, imgsrc, desc }) => {
     return (
         <div className={styles.timeline}>
-            <div className={`${left ? "left" : "right"} container`}>
-                <div className="content">
+            <div className={`${styles.container} ${left ? styles.left : styles.right}`}>
+                <div className={styles.content}>
                     <div className="w-full cover">
                         <div className="shadow rounded-lg overflow-hidden">
                             <Link className="mt-2" href="/">
@@ -14,8 +14,8 @@ const Timeline = ({ title, left, imgsrc, desc }) => {
                                     className="w-full object-cover object-center overflow-hidden max-h-60"
                                     src={imgsrc}
                                     alt={title}
-                                    width="400px"
-                                    height="auto"
+                                    width="400"
+                                    height="400"
                                 />
 
                                 <div className="p-2">
