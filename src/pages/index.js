@@ -45,7 +45,6 @@ export default function Home() {
         {timelineData && timelineData.map((item, index) => {
           return (<Timeline key={index} title={item.title} imgsrc={item.imgsrc} left={item.left} desc={item.desc} />)
         })}
-
       </div>
     </>
   )

@@ -12,7 +12,7 @@ const Timeline = ({ title, left, imgsrc, desc }) => {
                             <Link className="mt-2" href="/">
                                 <Image
                                     className="w-full object-cover object-center overflow-hidden max-h-60"
-                                    src={imgsrc}
+                                    src={`/${imgsrc}`}
                                     alt={title}
                                     width="400"
                                     height="400"

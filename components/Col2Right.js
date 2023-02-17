@@ -9,12 +9,11 @@ const Col2Right = ({ title, imgsrc, desc }) => {
         </h1>
         <p className="mb-8 leading-relaxed">{desc}</p>
         <div className="flex justify-center">
-            <button className="inline-flex font-bold bg-orange-600 text-white border-0 py-2 px-6 focus:outline-none  rounded text-lg">Ask for Quick Quote</button>
-          
+            <button className="inline-flex font-bold bg-orange-600 text-white border-0 py-2 px-6 focus:outline-none  rounded text-lg">Ask for Quick Quote</button>  
         </div>
       </div>
       <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-      <Image className="object-cover object-center rounded" width="500" height="300" alt="hero" src={imgsrc} />
+      <Image className="object-cover object-center rounded" width="500" height="300" alt="hero" src={`/${imgsrc}`} />
       </div>
     </div>
   </section>
