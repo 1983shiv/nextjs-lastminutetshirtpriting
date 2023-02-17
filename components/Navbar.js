@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Logo from "./Logo"
+import Link from 'next/link'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(true)
@@ -20,45 +21,45 @@ const Navbar = () => {
                 <nav>
                     <ul className="lg:flex items-center justify-between text-base text-shades-700 pt-4 lg:pt-0" >
                         <li onClick={toggleNav}>
-                            <a
+                            <Link
                                 className="lg:p-4 py-3 px-0 block border-b-2 font-2xl border-transparent hover:border-main-400"
-                                href="/">Home</a>
+                                href="/">Home</Link>
                         </li>
                         <li onClick={toggleNav}>
-                            <a
+                            <Link
                                 className="lg:p-4 py-3 px-0 block border-b-2 font-2xl border-transparent hover:border-main-400"
                                 href="/">Custom T-Shirts
-                            </a>
+                            </Link>
                         </li>
                         <li onClick={toggleNav}>
-                            <a
+                            <Link
                                 className="lg:p-4 py-3 px-0 block border-b-2 font-2xl border-transparent hover:border-main-400"
                                 href="/">Printing Techniques
-                            </a>
+                            </Link>
                         </li>
                         <li onClick={toggleNav}>
-                            <a
+                            <Link
                                 className="lg:p-4 py-3 px-0 block border-b-2 font-2xl border-transparent hover:border-main-400"
                                 href="/">Locations
-                            </a>
+                            </Link>
                         </li>
                         <li onClick={toggleNav}>
-                            <a
+                            <Link
                                 className="lg:p-4 py-3 px-0 block border-b-2 font-2xl border-transparent hover:border-main-400"
                                 href="/">Case Studies
-                            </a>
+                            </Link>
                         </li>
                         <li onClick={toggleNav}>
-                            <a
+                            <Link
                                 className="lg:p-4 py-3 px-0 block border-b-2 font-2xl border-transparent hover:border-main-400"
                                 href="/">Blog
-                            </a>
+                            </Link>
                         </li>
                         <li onClick={toggleNav}>
-                            <a
+                            <Link
                                 className="lg:px-4 lg:py-2 py-2 px-0 block font-bold bg-orange-600 rounded-md text-white border-transparent hover:border-main-400 hover:bg-slate-200 hover:text-orange-600"
                                 href="/">Get a Quote
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { styles } from "./index.module.css"
+import Link from 'next/link'
 
 const Timeline = ({ title, left, imgsrc, desc }) => {
     return (
@@ -8,7 +9,7 @@ const Timeline = ({ title, left, imgsrc, desc }) => {
                 <div className="content">
                     <div className="w-full cover">
                         <div className="shadow rounded-lg overflow-hidden">
-                            <a className="mt-2" href="/">
+                            <Link className="mt-2" href="/">
                                 <Image
                                     className="w-full object-cover object-center overflow-hidden max-h-60"
                                     src={imgsrc}
@@ -24,7 +25,7 @@ const Timeline = ({ title, left, imgsrc, desc }) => {
                                     <p className="mb-2 p-2 leading-relaxed text-sm">{desc}</p>
                                 </div>
 
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
